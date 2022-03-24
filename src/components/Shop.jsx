@@ -15,7 +15,6 @@ const Shop = () => {
   const [alertName, setAlertName] = useState('');
 
   const addToBasket = (item) => {
-    console.log(item)
     const itemIndex = order.findIndex(el => el.id === item.id)
     if (itemIndex < 0) {
       const newItem = {
